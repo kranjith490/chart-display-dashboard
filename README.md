@@ -1,4 +1,4 @@
-# Follow step 1 to 3 for initial setup.
+# Follow instruction step 1 to 3 for initial setup.
 1.Install node js
 1.Do npm install in the terminal
 2.Do npm run start in the terminal
