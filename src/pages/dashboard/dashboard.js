@@ -1,4 +1,4 @@
-import { Grid } from "@material-ui/core";
+import { Grid, Typography } from "@material-ui/core";
 import { useEffect } from "react";
 import BarChart from "../../component/barChar";
 import PieChart from "../../component/pieChart";
@@ -15,15 +15,24 @@ const Dashboard = () => {
 
   return (
     <Grid container direction="column">
-      {JSON.stringify(chartData) !== "{}"
-        ? chartData.map((data, key) => {
-            return data.type === "Bar" ? (
-              <BarChart key={key} data={data.elements} dataId={key} />
-            ) : (
-              <PieChart key={key} data={data.elements} dataId={key} />
-            );
-          })
-        : "No Data Available to show"}
+      {JSON.stringify(chartData) !== "{}" ? (
+        chartData.map((data, key) => {
+          return data.type === "Bar" ? (
+            <BarChart key={key} data={data.elements} dataId={key} />
+          ) : (
+            <PieChart key={key} data={data.elements} dataId={key} />
+          );
+        })
+      ) : (
+        <Grid
+          container
+          justifyContent="center"
+          alignItems="center"
+          style={{ width: "100vw", height: "100vh" }}
+        >
+          <Typography>fetching server data.....</Typography>
+        </Grid>
+      )}
     </Grid>
   );
 };

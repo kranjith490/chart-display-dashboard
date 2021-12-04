@@ -44,7 +44,6 @@ const BarChart = ({ data, dataId }) => {
           <Chart data={data}>
             <ArgumentAxis />
             <BarSeries valueField="value" argumentField="particular" />
-            <Title text="World population" />
             <Animation />
           </Chart>
         </CardContent>

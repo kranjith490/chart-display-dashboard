@@ -39,7 +39,6 @@ const PieChart = ({ data, dataId }) => {
         <CardContent>
           <Chart data={data}>
             <PieSeries valueField="value" argumentField="particular" />
-            <Title text="Area of Countries" />
             <Animation />
           </Chart>
         </CardContent>
