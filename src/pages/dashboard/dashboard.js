@@ -14,7 +14,13 @@ const Dashboard = () => {
   }, []);
 
   return (
-    <Grid container direction="column">
+    <Grid
+      container
+      justifyContent="center"
+      alignItems="center"
+      spacing={3}
+      className="dashboard-layout"
+    >
       {JSON.stringify(chartData) !== "{}" ? (
         chartData.map((data, key) => {
           return data.type === "Bar" ? (
@@ -24,14 +30,7 @@ const Dashboard = () => {
           );
         })
       ) : (
-        <Grid
-          container
-          justifyContent="center"
-          alignItems="center"
-          style={{ width: "100vw", height: "100vh" }}
-        >
-          <Typography>fetching server data.....</Typography>
-        </Grid>
+        <Typography>fetching server data.....</Typography>
       )}
     </Grid>
   );

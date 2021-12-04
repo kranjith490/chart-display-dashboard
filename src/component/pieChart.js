@@ -4,11 +4,7 @@ import { Grid } from "@material-ui/core";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import CardActions from "@material-ui/core/CardActions";
-import {
-  Chart,
-  PieSeries,
-  Title,
-} from "@devexpress/dx-react-chart-material-ui";
+import { Chart, PieSeries } from "@devexpress/dx-react-chart-material-ui";
 import { Animation } from "@devexpress/dx-react-chart";
 
 import SelectInput from "./select";
@@ -43,7 +39,12 @@ const PieChart = ({ data, dataId }) => {
           </Chart>
         </CardContent>
         <CardActions>
-          <Grid container>
+          <Grid
+            container
+            justifyContent="center"
+            alignItems="center"
+            className="set-width"
+          >
             <SelectInput
               value={selectInput}
               data={data}

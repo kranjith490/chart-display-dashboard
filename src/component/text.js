@@ -1,12 +1,19 @@
-import { Grid } from "@material-ui/core";
+import { Grid, Typography } from "@material-ui/core";
 import TextField from "@material-ui/core/TextField";
 
 const TextInput = ({ value, handleInputChange }) => {
   return (
-    <Grid item xs={12} sm={12} md={4} lg={8}>
+    <Grid
+      item
+      xs={6}
+      sm={6}
+      md={4}
+      lg={4}
+      className="input-center "
+    >
       <TextField
         id="standard-number"
-        label="Number"
+        label={<Typography> Value </Typography>}
         type="number"
         value={value}
         onChange={(event) => {

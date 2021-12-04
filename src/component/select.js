@@ -1,11 +1,19 @@
 import { Grid } from "@material-ui/core";
+import InputLabel from "@material-ui/core/InputLabel";
 import Select from "@material-ui/core/Select";
 import MenuItem from "@material-ui/core/MenuItem";
 
 const SelectInput = ({ data, value, handleSelectChange }) => {
   console.log("Default", value);
   return (
-    <Grid item xs={12} sm={12} md={8} lg={8}>
+    <Grid item xs={6} sm={6} md={8} lg={8} className="input-center ">
+      <InputLabel
+        className="label-heading"
+        shrink
+        id="demo-simple-select-placeholder-label-label"
+      >
+        Particular
+      </InputLabel>
       <Select
         labelId="demo-simple-select-label"
         id="demo-simple-select"

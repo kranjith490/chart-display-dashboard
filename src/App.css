@@ -40,3 +40,33 @@
 .select-width {
   width: 100px
 }
+
+.MuiGrid-spacing-xs-3 {
+  margin: 0px !important;
+}
+
+.header {
+  padding: 20px;
+        background: #0E86D4;
+        border-radius: 5px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px
+}
+
+.input-center {
+  text-align: center;
+}
+
+.label-heading {
+  margin-left: 40px;
+}
+
+.set-width{
+  width: 100vw;
+}
+
+.dashboard-layout{
+  width: 100vw;
+   height: 100vh;
+}

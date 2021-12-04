@@ -7,7 +7,6 @@ import CardActions from "@material-ui/core/CardActions";
 import {
   Chart,
   BarSeries,
-  Title,
   ArgumentAxis,
 } from "@devexpress/dx-react-chart-material-ui";
 import { Animation } from "@devexpress/dx-react-chart";
@@ -37,7 +36,7 @@ const BarChart = ({ data, dataId }) => {
   };
 
   return (
-    <Grid item xs={12} sm={12} md={4} lg={4}>
+    <Grid item xs={12} sm={12} md={6} lg={4}>
       <Card>
         {" "}
         <CardContent>
@@ -48,7 +47,12 @@ const BarChart = ({ data, dataId }) => {
           </Chart>
         </CardContent>
         <CardActions>
-          <Grid container>
+          <Grid
+            container
+            direction="row"
+            justifyContent="center"
+            className="set-width"
+          >
             <SelectInput
               value={selectInput}
               data={data}
