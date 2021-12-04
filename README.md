@@ -1,3 +1,10 @@
+# Follow step 1 to 3 for initial setup.
+1.Install node js
+1.Do npm install in the terminal
+2.Do npm run start in the terminal
+3.To view application, Open browser and type localhost:3000 when above 1 and 2 are success.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
