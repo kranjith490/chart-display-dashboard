@@ -18,7 +18,6 @@ export const setAPIFailure = (actionType, response) => {
 };
 
 export const inputChange = (actionType, payload) => {
-  console.log("Action", actionType, payload);
   return {
     type: actionType,
     payload: payload,
