@@ -19,7 +19,6 @@ export const chartReducer = (state = initialState, action = {}) => {
       data = JSON.parse(JSON.stringify(state.chartData));
       let { dataId, elementId, newValue } = action.payload;
       data[dataId].elements[elementId].value = newValue;
-      console.log("From Reducer", { dataId, elementId, newValue }, data);
       return { ...state, chartData: data };
     }
     default:
