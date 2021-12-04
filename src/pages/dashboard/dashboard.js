@@ -34,10 +34,10 @@ const Dashboard = () => {
       ) : chartData.status === 500 ? (
         <Typography> {chartData.message} </Typography>
       ) : (
-        <div>
+        <Fragment>
           <Loader imagePath={loader} />
           <Typography>fetching server data.....</Typography>
-        </div>
+        </Fragment>
       )}
     </Grid>
   );
