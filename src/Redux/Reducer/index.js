@@ -1,5 +1,6 @@
 const SET_CHART_DATA = "SET_CHART_DATA";
 const HANDLE_INPUT_CHANGE = "HANDLE_INPUT_CHANGE";
+const SET_API_FAILURE = "SET_API_FAILURE";
 
 const initialState = {
   chartData: {},
@@ -8,6 +9,9 @@ const initialState = {
 export const chartReducer = (state = initialState, action = {}) => {
   switch (action.type) {
     case SET_CHART_DATA: {
+      return { ...state, chartData: action.response };
+    }
+    case SET_API_FAILURE: {
       return { ...state, chartData: action.response };
     }
     case HANDLE_INPUT_CHANGE: {
