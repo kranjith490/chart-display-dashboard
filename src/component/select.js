@@ -4,7 +4,6 @@ import Select from "@material-ui/core/Select";
 import MenuItem from "@material-ui/core/MenuItem";
 
 const SelectInput = ({ data, value, handleSelectChange }) => {
-  console.log("Default", value);
   return (
     <Grid item xs={6} sm={6} md={8} lg={8} className="input-center ">
       <InputLabel
